@@ -24,6 +24,7 @@ import javafx.scene.image.WritableImage;
 import javafx.scene.layout.HBox;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
 
 import javax.imageio.ImageIO;
 
@@ -39,6 +40,14 @@ public class AppController implements Initializable {
     public Rectangle precisionLevelThree;
     public ScrollPane previewPane;
     public Text messageOnScreen;
+    public ToggleButton langUABtn;
+    public ToggleButton langENGBtn;
+    public Text previewText;
+    public Button readMeButton;
+    public Button precisionButton;
+    public Button startButton;
+    public Text  sliderText;
+
 
 
     public void onStartButtonClick(){
@@ -52,7 +61,6 @@ public class AppController implements Initializable {
         Application.setDefaultValue();
 
         execute();
-
     }
 
     public void onChooseFileButtonClick(){
@@ -150,6 +158,35 @@ public class AppController implements Initializable {
     public void onHelpButtonClick() throws IOException, URISyntaxException {
         Desktop.getDesktop().browse(new URI("https://github.com/Artem1018/imagConverterToHexagonalRaster"));
     }
+
+    public void onLangUAButtonClick(){
+        langENGBtn.setSelected(false);
+        langUABtn.setSelected(true);
+
+        previewText.setText("Попередній перегляд");
+        precisionButton.setText("Точність");
+        chooseFile.setText("Обрати зображення");
+        startButton.setText("Пуск");
+        sliderText.setText("Коефіціент розміру пікселя");
+        readMeButton.setText("Довідка");
+        messageOnScreen.setText("Оберіть зображення");
+    }
+
+    public void onLangENGButtonClick(){
+        langUABtn.setSelected(false);
+        langENGBtn.setSelected(true);
+
+        previewText.setText("Preview");
+        precisionButton.setText("Accuracy");
+        chooseFile.setText("Choose an image");
+        startButton.setText("Start");
+        sliderText.setText("Pixel size ratio");
+        readMeButton.setText("Readme");
+
+        messageOnScreen.setText("Select an image");
+
+    }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

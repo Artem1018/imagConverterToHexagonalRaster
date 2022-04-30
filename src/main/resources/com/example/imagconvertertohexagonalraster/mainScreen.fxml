@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.shape.Rectangle?>
@@ -26,6 +27,7 @@
             </ScrollPane>
          </children>
       </HBox>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#e4e4e4" height="69.0" layoutX="16.0" layoutY="320.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="89.0" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="16.0" />
       <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#e4e4e4" height="111.0" layoutX="604.0" layoutY="289.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="592.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
       <Button fx:id="chooseFile" layoutX="338.0" layoutY="296.0" mnemonicParsing="false" onAction="#onChooseFileButtonClick" prefHeight="25.0" prefWidth="186.0" text="Обрати зображення" AnchorPane.bottomAnchor="79.0" AnchorPane.rightAnchor="76.0">
          <font>
@@ -39,7 +41,7 @@
          <font>
             <Font name="SansSerif Regular" size="13.0" />
          </font></Button>
-      <Text layoutX="338.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Коефіціент розміру зображення" wrappingWidth="248.0" AnchorPane.bottomAnchor="57.0" AnchorPane.rightAnchor="14.0" />
+      <Text fx:id="sliderText" layoutX="338.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Коефіціент розміру пікселя" wrappingWidth="248.0" AnchorPane.bottomAnchor="57.0" AnchorPane.rightAnchor="14.0" />
       <Rectangle fx:id="precisionLevelThree" arcHeight="5.0" arcWidth="5.0" fill="#3beb3b" height="15.0" layoutX="254.0" layoutY="370.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="68.0" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="278.0" />
       <Rectangle fx:id="precisionLevelTwo" arcHeight="5.0" arcWidth="5.0" fill="#3beb3b" height="15.0" layoutX="254.0" layoutY="348.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="68.0" AnchorPane.bottomAnchor="37.0" AnchorPane.rightAnchor="278.0" />
       <Rectangle fx:id="precisionLevelOne" arcHeight="5.0" arcWidth="5.0" fill="#3beb3b" height="15.0" layoutX="254.0" layoutY="327.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="68.0" AnchorPane.bottomAnchor="58.0" AnchorPane.rightAnchor="278.0" />
@@ -52,21 +54,23 @@
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="57.0" prefWidth="198.0" />
         </content>
       </ScrollPane>
-      <Text layoutX="612.2900390625" layoutY="302.7685546875" strokeType="OUTSIDE" strokeWidth="0.0" text="Попередній перегляд" AnchorPane.bottomAnchor="94.4765625" AnchorPane.rightAnchor="456.0">
+      <Text fx:id="previewText" layoutX="612.2900390625" layoutY="302.7685546875" strokeType="OUTSIDE" strokeWidth="0.0" text="Попередній перегляд" AnchorPane.bottomAnchor="94.4765625" AnchorPane.rightAnchor="456.0">
          <font>
             <Font name="SansSerif Regular" size="13.0" />
          </font>
       </Text>
-      <Button layoutX="19.0" layoutY="357.0" mnemonicParsing="false" onAction="#onHelpButtonClick" text="Довідка" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="19.0" />
+      <Button fx:id="readMeButton" layoutX="20.0" layoutY="357.0" mnemonicParsing="false" onAction="#onHelpButtonClick" prefHeight="26.0" prefWidth="80.0" text="Довідка" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="20.0" />
       <Text fill="#7c7c7c" layoutX="617.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="created by Artem Marushchak" AnchorPane.bottomAnchor="6.2451171875" AnchorPane.rightAnchor="397.318359375">
          <font>
             <Font name="Arial Bold" size="13.0" />
          </font>
       </Text>
-      <Text fx:id="messageOnScreen" blendMode="MULTIPLY" fill="#757575" layoutX="252.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Оберіть зображення" AnchorPane.bottomAnchor="248.8017578125" AnchorPane.rightAnchor="266.484375">
+      <Text fx:id="messageOnScreen" blendMode="MULTIPLY" fill="#757575" layoutX="252.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Оберіть зображення" textAlignment="CENTER" wrappingWidth="712.0172729492188" AnchorPane.bottomAnchor="249.0" AnchorPane.rightAnchor="237.0">
          <font>
             <Font name="SansSerif Bold" size="67.0" />
          </font>
       </Text>
+      <ToggleButton fx:id="langENGBtn" layoutX="21.0" layoutY="327.0" mnemonicParsing="false" onAction="#onLangENGButtonClick" text="ENG" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="21.0" />
+      <ToggleButton fx:id="langUABtn" layoutX="64.0" layoutY="327.0" mnemonicParsing="false" onAction="#onLangUAButtonClick" selected="true" text="UA" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="64.0" />
    </children>
 </AnchorPane>

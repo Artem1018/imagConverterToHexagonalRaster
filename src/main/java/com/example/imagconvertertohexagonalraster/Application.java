@@ -30,6 +30,9 @@ public class Application extends javafx.application.Application {
 
     private final Scene scene = new Scene(pane);
 
+    private static Stage stage;
+    public static Stage getStage() { return stage; }
+
     static {
         try {
             pane = fxmlLoader.load();
@@ -39,7 +42,8 @@ public class Application extends javafx.application.Application {
     }
 
     @Override
-    public void start(Stage stage){
+    public void start(Stage primaryStage){
+        stage = primaryStage;
         stage.setTitle("Конвертор зображень");
         stage.setScene(scene);
         stage.show();
