@@ -4,7 +4,9 @@
  You need to select the image on the computer to be converted by pressing the "Обрати зображення" button.
  The thumbnail preview is uploaded to the appropriate window. It is possible to change the thumbnail for the desired part of the image processing.
  After selecting the required part, press the "Пуск" button.
-
+ 
+ ![This is an image](/picProgram.png)
+ 
 > The left part of the work area will be the original image, and the right - the converted
 
 #### Change the pixel size
