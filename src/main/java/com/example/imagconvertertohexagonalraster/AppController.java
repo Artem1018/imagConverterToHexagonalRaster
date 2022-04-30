@@ -163,6 +163,8 @@ public class AppController implements Initializable {
         langENGBtn.setSelected(false);
         langUABtn.setSelected(true);
 
+        Application.getStage().setTitle("Конвертер зображень");
+
         previewText.setText("Попередній перегляд");
         precisionButton.setText("Точність");
         chooseFile.setText("Обрати зображення");
@@ -175,6 +177,8 @@ public class AppController implements Initializable {
     public void onLangENGButtonClick(){
         langUABtn.setSelected(false);
         langENGBtn.setSelected(true);
+
+        Application.getStage().setTitle("Image converter");
 
         previewText.setText("Preview");
         precisionButton.setText("Accuracy");

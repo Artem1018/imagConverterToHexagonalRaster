@@ -44,7 +44,7 @@ public class Application extends javafx.application.Application {
     @Override
     public void start(Stage primaryStage){
         stage = primaryStage;
-        stage.setTitle("Конвертор зображень");
+        stage.setTitle("Конвертер зображень");
         stage.setScene(scene);
         stage.show();
         stage.setMinWidth(1200);
