@@ -19,5 +19,5 @@ After converting the image, four files are automatically created:
 * "img-converted.png" - images with hexagon pixels;
 * "img-compare.png" - before / after comparison.
 
-
+**The "Довідка" button opens a web page where you can read "README" file.**
 
