@@ -12,3 +12,12 @@ The pixel size is adjusted using slider "Коефіціент розміру з�
 During the slider interaction, appears a hexagonal primitive in the right part of the work area then clearly understand the size.
 Also, to expand the choice of size, implemented three modes, which are changed by the button "Точність"
 
+#### Save the image to a file
+After converting the image, three files are automatically created:
+* "img-preview.png" - needed for the program to work properly;
+* "img-original.png" - images with square pixels;
+* "img-converted.png" - images with hexagon pixels;
+* "img-compare.png" - before / after comparison.
+
+
+
