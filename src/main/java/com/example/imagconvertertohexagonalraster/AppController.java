@@ -148,7 +148,7 @@ public class AppController implements Initializable {
     }
 
     public void onHelpButtonClick() throws IOException, URISyntaxException {
-        Desktop.getDesktop().browse(new URI("https://www.youtube.com/watch?v=SlE0dCuO5yc&ab_channel=Randomcode"));
+        Desktop.getDesktop().browse(new URI("https://github.com/Artem1018/imagConverterToHexagonalRaster"));
     }
 
     @Override
