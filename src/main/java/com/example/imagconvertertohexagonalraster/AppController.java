@@ -156,7 +156,7 @@ public class AppController implements Initializable {
     }
 
     public void onHelpButtonClick() throws IOException, URISyntaxException {
-        Desktop.getDesktop().browse(new URI("https://github.com/Artem1018/imagConverterToHexagonalRaster"));
+        Desktop.getDesktop().browse(new URI("https://github.com/Artem1018/imagConverterToHexagonalRaster/blob/main/README.md"));
     }
 
     public void onLangUAButtonClick(){
