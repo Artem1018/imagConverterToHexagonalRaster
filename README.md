@@ -10,4 +10,5 @@
 #### Change the pixel size
 The pixel size is adjusted using slider "Коефіціент розміру зображення".
 During the slider interaction, appears a hexagonal primitive in the right part of the work area then clearly understand the size.
+Also, to expand the choice of size, implemented three modes, which are changed by the button "Точність"
 
